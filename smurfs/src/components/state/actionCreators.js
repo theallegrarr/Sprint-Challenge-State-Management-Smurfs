@@ -1,13 +1,27 @@
 import axios from 'axios';
 import * as types from './actionTypes';
 
-export function changeInput(value) {
-  
+export function changeInput(name, value) {
   return {
-    type: types.ON_INPUT_CHANGE,
+    type: types.ON_NAME_CHANGE,
     payload: value,
-  };
-}
+  }
+};
+
+export function changeHeight(value) {
+  return {
+    type: types.ON_HEIGHT_CHANGE,
+    payload: value,
+  }
+};
+
+export function changeAge(value) {
+  return {
+    type: types.ON_AGE_CHANGE,
+    payload: value,
+  }
+};
+
 
 export function addSmurf(smurf) {
   return {

@@ -5,6 +5,7 @@ import thunk from 'redux-thunk';
 import { combineReducers, createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import Smurfs from './Smurfs';
+import Form from './Form';
 import * as reducers from './state/reducers';
 
 // create a combined reducer (4)
@@ -35,6 +36,7 @@ class App extends Component {
         <div>Have fun!</div>
       </div>
       <Smurfs />
+      <Form />
       </Provider>
     );
   }

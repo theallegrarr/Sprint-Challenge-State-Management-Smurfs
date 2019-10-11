@@ -12,7 +12,7 @@ function mapStateToProps(state) {
 }
 
 function Smurfs(props) {
-  const { smurf, smurfs, getSmurf } = props;
+  const { smurf, getSmurf } = props;
 
   useEffect(() => {
      getSmurf();
