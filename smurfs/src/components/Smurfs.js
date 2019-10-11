@@ -26,6 +26,7 @@ function Smurfs(props) {
           {smurf.smurfs.map(smurfi => (
             <div className='user-card'>
               <div className='user-details'>
+                <h2>{smurfi.id}</h2>
                 <h3>{smurfi.name}</h3>
                 <h4>{smurfi.age}</h4>
               <p>{smurfi.height}</p>
