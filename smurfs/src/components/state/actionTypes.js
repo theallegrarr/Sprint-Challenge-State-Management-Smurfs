@@ -5,3 +5,4 @@ export const ON_HEIGHT_CHANGE = 'ON_HEIGHT_CHANGE';
 export const GET_SMURFS = 'GET_SMURFS';
 export const ADD_SMURFS = 'ADD_SMURFS';
 export const EDIT_SMURFS = 'EDIT_SMURFS';
+export const ON_SUBMIT = 'ON_SUBMIT';

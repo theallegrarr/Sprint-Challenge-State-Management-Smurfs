@@ -40,6 +40,11 @@ export function smurfReducer(state = initialSmurfs, action) {
         ...state,
         smurfs: state.smurfs.concat(action.payload)
       }
+    case types.ON_SUBMIT:
+      return {
+        ...state,
+        smurfs: (action.payload)
+      }
     default:
       return state;
   }

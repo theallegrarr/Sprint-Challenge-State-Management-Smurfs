@@ -41,3 +41,15 @@ export const getSmurf = () => dispatch => {
     }).catch(e =>  console.log(e));
 };
 
+
+export const postSmurf = (name, age, height) => dispatch => {
+  const smurfApi = `http://localhost:3333/smurfs`;
+  const smurfPromise = axios.post(smurfApi, {name: name, age: age, height: height});
+  
+  Promise.all([smurfPromise])
+    .then(([smurfData]) => {
+      console.log(smurfData);
+      dispatch(addSmurf(smurfData.data)); // :)
+    }).catch(e =>  console.log(e));
+};
+

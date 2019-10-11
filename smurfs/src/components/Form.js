@@ -10,7 +10,7 @@ function mapStateToProps(state) {
 }
 
 function Form(props) {
-  const { smurf, form, changeInput, changeHeight, changeAge } = props;
+  const { smurf, form, changeInput, changeHeight, changeAge, postSmurf } = props;
 
   const onValueChange = event => {
     if(event.target.name==='name')changeInput(event.target.name, event.target.value);
@@ -21,8 +21,7 @@ function Form(props) {
   };
   const onSubmit = event => {
     event.preventDefault();
-    console.log(form);
-    // getUser(form.value);
+    postSmurf(smurf.form.name, smurf.form.age, smurf.form.height);
   };
 
   return (
